@@ -1,10 +1,13 @@
 <template>
   <div id="app">
+    <sidebar></sidebar>
     <h1>{{ msg }}</h1>
   </div>
 </template>
 
 <script>
+  import Sidebar from './components/sidebar.vue';
+
 export default {
   data () {
     return {
@@ -14,6 +17,9 @@ export default {
       // its initial state.
       msg: 'Sample'
     }
+  },
+  components: {
+    Sidebar
   }
 }
 </script>
