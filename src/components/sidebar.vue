@@ -10,7 +10,7 @@
 <style>
 .main-sidebar {
     position: fixed;
-    top: 0;
+    top: 50px;
     left: 0;
     bottom: 0;
     width: 250px;
