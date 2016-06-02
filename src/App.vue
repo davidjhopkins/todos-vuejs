@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <globalheader></globalheader>
     <sidebar></sidebar>
     <h1>{{ msg }}</h1>
   </div>
@@ -7,6 +8,7 @@
 
 <script>
   import Sidebar from './components/sidebar.vue';
+  import Globalheader from './components/header.vue';
 
 export default {
   data () {
@@ -19,12 +21,16 @@ export default {
     }
   },
   components: {
-    Sidebar
+    Sidebar,
+    Globalheader
   }
 }
 </script>
 
 <style>
+html, body {
+  margin:0;
+}
 body {
   font-family: Helvetica, sans-serif;
 }
